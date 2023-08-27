@@ -74,7 +74,7 @@ app.post("/posts", (req,res) => {
   res.status(200).json(post);
 });
 
-//CHALLENGE 4: PATCH a post when you just want to update one parameter
+//CHALLENGE 4: PUT/PATCH a post when you just want to update one or more parameter
 
 app.patch("/posts/:id", (req,res) => {
   const id=req.params.id;
